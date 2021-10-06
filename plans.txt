@@ -1,0 +1,11 @@
+Hayesod
+MVP planning
+- All chapters in the book
+- Each chapter should contain:
+  - Vocabulary words
+    - Flash card mode for studying
+    - Enter translation (should reflect correct/incorrect input)
+  - Sentence translating
+    - Input for translating the sentence (correct/incorrect)
+  - Story section
+    - Toggle revealing the translation

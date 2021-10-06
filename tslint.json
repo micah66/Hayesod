@@ -1,0 +1,121 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier", "rxjs-tslint-rules"],
+  "rules": {
+    "no-console": false,
+    "max-classes-per-file": false,
+    "forin": false,
+    "member-access": [true, "no-public"],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "protected-constructor",
+          "private-constructor",
+          "public-static-field",
+          "public-instance-method",
+          "protected-static-field",
+          "protected-instance-method",
+          "private-static-field",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "adjacent-overload-signatures": true,
+    "unified-signatures": true,
+    "prefer-function-over-method": [true, "allow-public", "allow-protected"],
+    "no-invalid-this": [true, "check-function-in-method"],
+    "no-duplicate-super": true,
+    "no-misused-new": true,
+    "no-construct": true,
+    "no-empty-interface": true,
+    "prefer-method-signature": true,
+    "interface-over-type-literal": true,
+    "no-arg": true,
+    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"],
+    "arrow-return-shorthand": true,
+    "prefer-const": true,
+    "no-shadowed-variable": true,
+    "one-variable-per-declaration": [true, "ignore-for-loop"],
+    "no-duplicate-variable": [true, "check-parameters"],
+    "no-unnecessary-initializer": true,
+    "ordered-imports": [
+      true,
+      {
+        "import-sources-order": "any",
+        "named-imports-order": "case-insensitive"
+      }
+    ],
+    "no-duplicate-imports": true,
+    "no-require-imports": true,
+    "no-default-export": true,
+    "typedef": [true, "call-signature", "property-declaration"],
+    "no-inferrable-types": true,
+    "no-angle-bracket-type-assertion": true,
+    "callable-types": true,
+    "no-non-null-assertion": true,
+    "no-invalid-template-strings": true,
+    "triple-equals": [true, "allow-null-check"],
+    "no-bitwise": true,
+    "use-isnan": true,
+    "no-conditional-assignment": true,
+    "prefer-for-of": true,
+    "switch-default": true,
+    "no-switch-case-fall-through": true,
+    "no-unsafe-finally": true,
+    "encoding": true,
+    "cyclomatic-complexity": [true, 20],
+    "newline-before-return": true,
+    "class-name": true,
+    "variable-name": [true, "check-format", "allow-leading-underscore", "ban-keywords"],
+    "jsdoc-format": true,
+    "no-string-throw": true,
+    "radix": true,
+    "no-return-await": true,
+    "no-duplicate-switch-case": true,
+    "invalid-void": true,
+    "no-async-without-await": true,
+    "comment-format": [true, "check-space", "check-uppercase", "allow-trailing-lowercase"],
+    "ban-ts-ignore": true,
+    "rxjs-no-internal": {
+      "severity": "error"
+    },
+    "rxjs-no-subject-unsubscribe": {
+      "severity": "error"
+    },
+    "rxjs-no-nested-subscribe": {
+      "severity": "error"
+    },
+    "rxjs-no-unsafe-takeuntil": {
+      "severity": "error"
+    },
+    "rxjs-finnish": {
+      "options": [{
+        "names": {
+          "Subject": false
+        },
+        "functions": false,
+        "methods": false,
+        "parameters": true,
+        "properties": true,
+        "variables": true
+      }],
+      "severity": "warning"
+    },
+    "rxjs-suffix-subjects": {
+      "options": [{
+        "parameters": true,
+        "properties": true,
+        "suffix": "Subject",
+        "variables": true
+      }],
+      "severity": "warning"
+    },
+    "rxjs-prefer-angular-composition": {
+      "severity": "warning"
+    }
+  }
+}

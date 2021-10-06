@@ -1,0 +1,11 @@
+# Ignore files
+tslint.json
+.eslintrc.json
+.dockerignore
+.eslintignore
+.prettierignore
+.sentryclirc
+package-lock.json
+# Ignore specific folder paths
+**/dist/
+# Ignore auto generated angular ts files
